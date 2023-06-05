@@ -8,6 +8,8 @@
     - Make sure it is named properly! Refer to the header of the readme for more info.
 #### Windows
 - Run `compile.bat` in the `tools` folder
-or
+
+or  
+
 - Open the project folder in Visual Studio Code
 - `Ctrl + Shift + B` to compile
