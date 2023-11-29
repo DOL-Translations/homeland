@@ -50,19 +50,6 @@ Text($43B564DC, "Skill Pointer") ; fill 3
 Text($43B564EC, "BGM Volume") ; fill 10
 Text($43B56500, " SE Volume") ; fill 6
 
-//Pause Menu
-Text($001160F8, "                    Saving") ; fill 1
-Text($00116180, "Adventure has been saved.") ; fill 3
-Text($00116C90, "Save") ; fill 5
-Text($00116C9C, "Quit") ; fill 7
-Text($00116CD0, "Settings") ; fill 1
-Text($00116CE8, "Save adventure to memory card?") ; fill 2
-Text($00116D08, "Save adventure to memory card?") ; fill 2
-Text($00116D78, "Save and exit to the Main Menu?") ; fill 1
-Text($00116DFC, "Would you like to save and return home?") ; fill 4
-Text($00199E28, "History") ; fill 1
-Text($0019A198, "History") ; fill 1
-
 //Respawn Menu
 Text($43B56148, "Respawn and return to a safe place?") ; fill 9
 Text($43CF0DD4, "Respawn and return to a safe place?") ; fill 9
@@ -71,10 +58,6 @@ Text($00199BE0, "Yes") ; fill 2
 Text($00199C70, "Yes") ; fill 2
 Text($41C05442, "Yes") ; fill 2
 
-Text($00199BE8, "No") ; fill 5
-Text($00199C5F, "No") ; fill 5
-Text($00199C60, "No") ; fill 5
-Text($00199D78, "No") ; fill 5
 Text($3CF8DD48, "No") ; fill 5
 Text($3CF906CC, "No") ; fill 5
 Text($3EA73F77, "No") ; fill 5
@@ -212,23 +195,6 @@ Text($57052660, "Connection Test") ; fill 1
 Text($57052670, "Credits") ; fill 13
 Text($57052684, "Go To The Network Settings.       \n")
 Text($570526A7, "Is This OK?") ; fill 14
-
-// Memory Card
-Text($00115982, " ON") ; fill 7
-Text($0011598C, "  OFF") ; db $81, $E8 ; fill 5
-Text($00115998, "It has been set") ; fill 5
-Text($001159AE, " Memorize") ; fill 5
-Text($001159BE, "  Reset") ; db $81, $E8 ; fill 7
-Text($00115B38, "An error has occured.") ; fill 7
-Text($00115CFC, "There is a problem with the memory card in SlotA.\n")
-Text($00115D2E, "It might get fixed by initializing it,     \n")
-Text($00115D5A, "but all the data will be lost.  \n")
-Text($00115D7B, "Do you want to initialize?") ; fill 3
-Text($00115DE8, "Initializing memory card. Is this OK?") ; fill 7
-Text($00115E6C, "It is now initialized.") ; fill 2
-Text($00115EC0, "It will not be able to save your progress in the game.") ; fill 6
-Text($00116084, "The memory card in Slot A is used to record the adventure.\n")
-Text($001160BF, "Please do not turn off the power or remove the card.") ; fill 5
 
 //Shop menu
 

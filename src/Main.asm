@@ -106,9 +106,14 @@ macro ReplaceAsset(ORIGIN, FILE, SIZE) {
 }
 
 //Region
-Text($3, "E")
+//Uncomment BOTH lines to change region to NTSC-U.
+//Doing so will garble the untranslated Japanese characters.
+//Text($3, "E")
+//origin $45B; db $01
 
 include "Banner.asm"
+
+include "System.asm"
 
 include "Menus.asm"
 

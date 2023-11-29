@@ -1,7 +1,10 @@
-//This is the network setup binary that gets loaded when you do the network setup on the main menu
-//netcfg.dol:
+//netcfg.dol
+//Network setup binary that gets loaded when you do the network setup on the main menu
 
-Text($499D4AB9, "Modem adapter or BBA")
+//Note: this patch is no longer necessary since the OFFICIAL English text
+//  gets loaded automatically if the game detects it is running NTSC-U
+
+/*Text($499D4AB9, "Modem adapter or BBA")
                 db NEWLINE, "not connected to the GameCube."
                 db NEWLINE, NEWLINE, "To configure the network settings,"
                 db NEWLINE, "the adapter must be connected."
@@ -47,4 +50,4 @@ Text($499D5057, "No") ; fill 5
 Text($499D5137, "No") ; fill 5
 Text($499D5210, "No") ; fill 5
 Text($499D5516, "No") ; fill 5
-Text($499D61F9, "No") ; fill 5
+Text($499D61F9, "No") ; fill 5*/
