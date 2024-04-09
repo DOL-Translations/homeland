@@ -1,5 +1,11 @@
-//Loading transition
-Text($00115BC4, "Please wait...") ; fill 8
+
+// alone.rel - start with this first
+Text($43B56E3C, "Please wait a moment.") ; fill 3
+
+
+// server.rel
+
+// client.rel
 
 //Action Menu
 Text($43B54940, "Attack") ; fill 6
@@ -167,34 +173,8 @@ Text($43CF4298, " Level") ; fill 2
 //End Stats menu
 
 // Start Game
-Text($57051B14, "Are you a boy or a girl?") ; fill 24
-Text($57051B44, "Please name your character.") ; fill 1
-Text($57051B60, "You cannot use the same name which exists on this memory card.") ; fill 2
-Text($57051BA0, "Adventure will start with this name.") ; fill 4
-Text($57051BC8, "New adventure data has been stored on this memory card.") ; fill 7
-Text($57051D18, "%03d hours %02d mins") ; fill 4
-Text($57051F54, "Check memory card SlotA") ; fill 1
-Text($57051F6C, "Edit this memory card") ; fill 11
-Text($57051F8C, "Start without saving data") ; fill 23
-Text($57051FBC, "Is it OK to erase this data?") ; fill 8
-Text($57051FE0, "Are you sure about erasing this data?") ; fill 11
-Text($570520E8, "Is it OK to erase this data?") ; fill 8
-Text($5705210C, "Are you sure about erasing this data?") ; fill 11
-Text($57052168, "Failed to load this memory card") ; fill 9
-Text($570523A8, "  Play Time:") ; fill 8
 
-// Start Screen
-Text($57052600, "Weapons") ; fill 1
-Text($57052608, "Shields") ; fill 1
-Text($57052610, "Items") ; fill 3
-Text($57052618, "You have  %D EXP") ; fill 4
-Text($5705262C, "New Game") ; fill 12
-Text($57052640, "Network") ; fill 9
-Text($57052650, "Network Setup") ; fill 3
-Text($57052660, "Connection Test") ; fill 1
-Text($57052670, "Credits") ; fill 13
-Text($57052684, "Go To The Network Settings.       \n")
-Text($570526A7, "Is This OK?") ; fill 14
+
 
 //Shop menu
 
@@ -207,6 +187,8 @@ Text($43B563B4, "Buy") ; fill 5
 Text($43CF1048, "Buy") ; fill 5
 Text($43B563D0, "Buy In Bulk") ; fill 5
 Text($43CF1064, "Buy In Bulk") ; fill 5
+
+// all.bin
 
 Text($24C3F5A9, "Shopping") ; fill 7 ; db "Sell Stuff" ; fill 5 ; db "Close" ; fill 2
 Text($24C43446, "Shopping") ; fill 7 ; db "Sell Stuff" ; fill 5 ; db "Close" ; fill 2

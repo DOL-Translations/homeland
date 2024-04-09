@@ -5,9 +5,55 @@ output "../output/HomeLand [U].iso", create
 origin $000000; insert "../input/HomeLand [J].iso" // Include Japanese HomeLand ISO
 
 macro Text(OFFSET, TEXT) {
-  map 0, 0, 256
+  map 0, 0, 256 // Map Default ASCII Chars
+  map '\n', 0x0A // New line
+
   origin {OFFSET}
-  db {TEXT}
+  variable availableLength = 0;
+  while (read(origin() + availableLength) != 0x00) {
+    ds 1
+  }
+
+  if (read(origin()) == 0x00) {
+    fill 1
+  }
+  if (read(origin()) == 0x00) {
+    fill 1
+  }
+  if (read(origin()) == 0x00) {
+    fill 1
+  }
+  if (read(origin()) == 0x00) {
+    fill 1
+  }
+
+  availableLength = origin() - {OFFSET} - 1
+  
+  origin {OFFSET}
+  db {TEXT} // ASCII Text To Print
+
+  variable newLength = origin() - {OFFSET}
+  if (newLength > availableLength) {
+    print {TEXT}
+    print " is too big by "
+    print (newLength - availableLength)
+  }
+
+  while (read(origin()) != 0x00) {
+    fill 1
+  } 
+}
+
+// Warning: use address first!!
+macro Text(TEXT) {
+  variable i = 40;
+  while (i > 0 && read(origin()) < 0x01) {
+    ds 1
+    i = i - 1;
+  }
+  
+  variable ori = origin()
+  Text(ori, {TEXT})
 }
 
 //Text utilities
@@ -108,8 +154,8 @@ macro ReplaceAsset(ORIGIN, FILE, SIZE) {
 //Region
 //Uncomment BOTH lines to change region to NTSC-U.
 //Doing so will garble the untranslated Japanese characters.
-//Text($3, "E")
-//origin $45B; db $01
+Text($3, "E")
+origin $45B; db $01
 
 include "Banner.asm"
 
@@ -133,4 +179,4 @@ include "Chatter.asm"
 
 include "Unsorted.asm"
 
-include "Netcfg.asm"
+//include "Netcfg.asm"

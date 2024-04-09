@@ -4,7 +4,7 @@
 //Note: this patch is no longer necessary since the OFFICIAL English text
 //  gets loaded automatically if the game detects it is running NTSC-U
 
-/*Text($499D4AB9, "Modem adapter or BBA")
+Text($499D4AB9, "Modem adapter or BBA")
                 db NEWLINE, "not connected to the GameCube."
                 db NEWLINE, NEWLINE, "To configure the network settings,"
                 db NEWLINE, "the adapter must be connected."
