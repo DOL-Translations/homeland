@@ -7,6 +7,9 @@ origin $000000; insert "../input/HomeLand [J].iso" // Include Japanese HomeLand 
 macro Text(OFFSET, TEXT) {
   map 0, 0, 256 // Map Default ASCII Chars
   map '\n', 0x0A // New line
+  //todo: add more mappings for special characters
+
+  //special code 0xFE05
 
   origin {OFFSET}
   variable availableLength = 0;
@@ -56,6 +59,8 @@ macro Text(TEXT) {
   Text(ori, {TEXT})
 }
 
+//todo: these macros and constants should instead use special characters, such as \n for new line, \t for tab, etc.
+
 //Text utilities
 // Font Colors
 constant BLACK = $B0 // Default
@@ -90,6 +95,15 @@ macro StringVA() {
   db $25, $73
 }
 //End
+
+macro TextLegacy(OFFSET, TEXT) {
+  map 0, 0, 256 // Map Default ASCII Chars
+  
+  origin {OFFSET}
+  
+  db {TEXT} // ASCII Text To Print
+
+}
 
 macro TextShiftJIS(OFFSET, TEXT) {
   // Map Shift-JIS Words
@@ -154,29 +168,18 @@ macro ReplaceAsset(ORIGIN, FILE, SIZE) {
 //Region
 //Uncomment BOTH lines to change region to NTSC-U.
 //Doing so will garble the untranslated Japanese characters.
-Text($3, "E")
+origin $3; db $45 //E
 origin $45B; db $01
 
 include "Banner.asm"
-
 include "System.asm"
-
-include "Menus.asm"
-
-//Names
-include "Names/NPC.asm"
-include "Names/Monsters.asm"
-include "Names/Items.asm"
-//---
-
-//Areas
-include "Areas/Room.asm"
-include "Areas/Park.asm"
-include "Areas/Cloots.asm"
-//---
-
-include "Chatter.asm"
-
-include "Unsorted.asm"
-
 //include "Netcfg.asm"
+include "Unsorted.asm"
+include "Cndy.asm"
+
+include "Alone.asm" //calls shared asm after setting up addrs
+//include "Server.asm" //todo: calls shared asm after setting up addrs
+//include "Client.asm" //todo: calls shared asm after setting up addrs
+
+include "GamePlay/backup/Menus.asm"
+include "GamePlay/backup/NPC.asm"
