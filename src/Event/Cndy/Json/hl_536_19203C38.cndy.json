@@ -1,0 +1,10 @@
+{
+    "FileName": "hl_536_19203C38.cndy",
+    "Number of Strings": "2",
+    "Size (bytes)": "36",
+    "Address": "0x38",
+    "Strings": [
+        "setAbsInvisible",
+        "resetAbsInvisible"
+    ]
+}

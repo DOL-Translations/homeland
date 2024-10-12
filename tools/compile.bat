@@ -25,6 +25,11 @@ if %ISOSize% neq %ISOTargetSize% (
 
 echo [INFO] Compiling patches - Please wait..
 
+py extract.py "../src/Event/Cndy/Temp/Start.dol" "../input/HomeLand [J].iso" 0x20300 1558528
+py extract.py "../src/Event/Cndy/Temp/all.bin" "../input/HomeLand [J].iso" 0x23B8F99C 534765248
+py extract_cndy.py "../src/Event/Cndy/Temp/all.bin" "../src/Event/Cndy/Temp/Start.dol" "..src/Event/Cndy/Raw/"
+py patch_cndy.py "../src/Event/Cndy/Raw/" "../src/Event/Cndy/Json/" "../src/Event/Cndy/RawEdit/"
+
 bass\\win\\bass.exe ..\\src\\Main.asm
 
 echo [INFO] Patches compiled

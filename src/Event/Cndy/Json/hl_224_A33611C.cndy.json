@@ -1,0 +1,12 @@
+{
+    "FileName": "hl_224_A33611C.cndy",
+    "Number of Strings": "4",
+    "Size (bytes)": "84",
+    "Address": "0x9C",
+    "Strings": [
+        "ヤミのかべに ふれますか？",
+        "setIgnoreAllHitEnable",
+        "setAbsInvisible",
+        "resetAbsInvisible"
+    ]
+}

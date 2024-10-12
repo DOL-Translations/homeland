@@ -1,0 +1,19 @@
+{
+    "FileName": "hl_393_12C96798.cndy",
+    "Number of Strings": "11",
+    "Size (bytes)": "276",
+    "Address": "0x240",
+    "Strings": [
+        "ひっぱれば うごきそうだ。",
+        "デンジャー デンジャー！",
+        "タイキョセヨ！",
+        "rescue_event_dasyutsu_warp_kidou",
+        "∇でぐちのワープそうちが きどうした！",
+        "エルザタワーから だっしゅつしますか？",
+        "∇",
+        "がタワーのでぐちに たどりついた！",
+        "disconnectHandsTrainAll",
+        "eventRevive",
+        "recoverAllLifePowCondition"
+    ]
+}

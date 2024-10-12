@@ -1,0 +1,13 @@
+{
+    "FileName": "hl_553_19AA1818.cndy",
+    "Number of Strings": "5",
+    "Size (bytes)": "96",
+    "Address": "0x40",
+    "Strings": [
+        "default.ame onEnterPlayer(",
+        ") セカンドプレイ",
+        "default.ame onLeavePlayer(",
+        "default.ame onSearch("
+    ],
+    "Found Strings": "4"
+}

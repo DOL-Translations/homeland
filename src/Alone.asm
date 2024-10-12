@@ -9,21 +9,21 @@ include "GamePlay/Items.asm"
 
 //30 strings in this block: characters and descriptions
 Text($43ADDF6C, "Block")
-Text("Frey")
+Text("Flei")
 Text("Kirara")
-Text("Polka")
-Text("Pinock")
-Text("Cocotte")
+Text("Porka")
+Text("Pinoc")
+Text("Cocotto")
 Text("Kron")
-Text("Nendou")
-Text("Mystic")
-Text("Robo")
+Text("Doh")
+Text("Misteka")
+Text("Robot")
 Text("Gant")
 Text("Unicorn")
-Text("ComCom")
-Text("Paradica")
+Text("KomKom")
+Text("Paradaika")
 Text("God")
-//Text("They grow and release their powers.")
+//Text("They build to release their power.")
 //Text("Fire tribes that can use various powers.")
 //Text("Gem tribes that create barriers to block spells.")
 //Text("Green tribes that are good at drawing out the power of the earth.")
@@ -52,15 +52,15 @@ Text("City of Darkness")
 Text("Cloots Heights")
 Text("Kaneru Heights")
 Text("Local Route")
-Text("Super Speedway")
+Text("Uru Mystery")
 Text("Wind's Edge")
-Text("Kiro's So-Call")
+Text("Kiro Mine")
 Text("Guguru's Cave")
-Text("Kiro Mountain")
-Text("Toreku Mountain")
+Text("Kiro Mine")
+Text("Trek Mountain")
 Text("Poruka's Edge")
-Text("Desert Ruins")
-Text("Eruza")
+Text("Eldora Ruins")
+Text("Elza")
 
 origin $43AFDD9C
 include "GamePlay/LocationsRealWorld.asm"
@@ -74,7 +74,7 @@ origin $43B43334
 include "GamePlay/Monsters.asm"
 
 origin $43B54374
-include "GamePlay/Battle.asm"
+include "GamePlay/Action.asm"
 
 Text($43B56F74, "Cloots Village")
 Text("Holo's Emergency Center")

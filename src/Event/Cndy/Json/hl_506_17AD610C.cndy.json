@@ -1,0 +1,12 @@
+{
+    "FileName": "hl_506_17AD610C.cndy",
+    "Number of Strings": "4",
+    "Size (bytes)": "72",
+    "Address": "0x30",
+    "Strings": [
+        "default.ame onLeavePlayer(",
+        ") ファーストプレイ",
+        "default.ame onSearch("
+    ],
+    "Found Strings": "3"
+}
