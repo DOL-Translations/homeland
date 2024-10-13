@@ -51,8 +51,23 @@
         "disconnectHandsTrainAll",
         "eventRevive",
         "recoverAllLifePowCondition",
-        "�\u0002グギギ‥‥‥[FE0A]\nなんで‥‥？[FE1E] どうして‥‥？▼",
-        "■"
+        "[FD02]グギギ‥‥‥[FE0A]\nなんで‥‥？[FE1E] どうして‥‥？▼",
+        "■",
+        "[FD02]コハクさえ あれば\nせかいの まおうに\nなれるはずだったのに‥‥▼",
+        "\n[FD02]じぶんのような\nしたっぱでも まおうに\nなれるはずだったのに‥‥▼",
+        "\n[FD02]なのになんで‥‥▼",
+        "[FD02]ギギギ‥‥‥[FE0A]\nダメなのか‥‥▼",
+        "[FD02]じぶんの チカラでは\nダメなのか‥‥▼",
+        "[FD02]ウギギギ‥‥[FE1E]\nくやしい‥‥▼",
+        "■\n[FD02]こうなったら‥‥▼",
+        "[FD03]こうなったら‥‥\nクエスターを‥‥‥▼",
+        "みちづれに してやるーー！！",
+        "setMotion",
+        "resetMotion",
+        "turnDir",
+        "setSpeedMultiplier",
+        "moveStartToRelative",
+        "setIgnoreAllHitEnable"
     ],
-    "Found Strings": "49"
+    "Found Strings": "64"
 }

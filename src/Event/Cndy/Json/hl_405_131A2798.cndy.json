@@ -14,7 +14,27 @@
         "びょう[B0]で\nオレは もどるぞ！",
         "ボクは デンキ へいき！\nこのさき いくなら\nボクつれてく！",
         "ボク もどるよ！",
-        "びょう[B0]で\nボクは もどるよ！"
+        "びょう[B0]で\nボクは もどるよ！",
+        "ロムサイトによる たんさくは\nドットおうじが ちゅうしんに\nなって すすめてたんだよ。▼",
+        "\nザマースじょおうの\nはんたいを おしきって\nじっこうされた けいかくでね。▼",
+        "\nおうじのことだから きっと\nやかましくいう じょおうから\nはなれたかったんだろうね。▼",
+        "■",
+        "[BB]マドルゴーレム[B0]を\nつくったのは [BB]ハカセ[B0]と\nよばれる じんぶつらしい。▼",
+        "\n\nもしかしたら はんらんの\nくろまくは その[BB]ハカセ[B0]‥‥▽\n",
+        "いや かんがえすぎか。▼",
+        "roboCountDown",
+        "participate",
+        "∇かんしゅロボに つかまったとき\n　７かいの ろうやに もどされるようになった！",
+        "eventModeStart_highLevel",
+        "!isPlayer",
+        "eraseBalloon",
+        "startLeaveZoneProduction",
+        "isPlayer",
+        "camDollyLoc",
+        "placeGen",
+        "startEnterZoneProduction",
+        "camRestoreDolly",
+        "eventModeEnd"
     ],
-    "Found Strings": "11"
+    "Found Strings": "31"
 }

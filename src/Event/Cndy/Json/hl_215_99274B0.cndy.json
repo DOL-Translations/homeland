@@ -83,13 +83,18 @@
         "さいごの たましいのカケラだ！",
         "もちものが いっぱいだったので\nせっかく つかまえた たましいに にげられた！",
         "あいことばをいって せいちにもどりますか？",
-        "�\n",
+        "[FD0A]",
         "なにか じゃあくな ふんいきをかんじる‥‥",
         "なにも おこならなかった。",
         "∇キロこうざんで まおうが ふっかつした！",
         "setHomePoint",
         "キロのまち せいどう",
-        "rescue_event_sekaigayaminitsutsumareru_2"
+        "rescue_event_sekaigayaminitsutsumareru_2",
+        "rescue_event_daimaounofukkatsu",
+        "setIgnoreAllHitEnable",
+        "thread_move_end",
+        "setDirToCreature",
+        "setSpeedMultiplier"
     ],
-    "Found Strings": "86"
+    "Found Strings": "91"
 }
