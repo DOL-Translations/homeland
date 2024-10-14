@@ -1,9 +1,4 @@
-//there are 120 strings in this block
-//remember to set the origin before calling this file
-
-Text("idk")
-
-//todo: rework into above list
+//todo: rework into item list
 //Money
 TextLegacy($00199D88, "Money") ; fill 2
 TextLegacy($43ADA8E4, "Money") ; fill 2

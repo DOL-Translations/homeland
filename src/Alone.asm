@@ -4,7 +4,10 @@
 //in the future addresses for server.rel and client.rel will be pulled from here
 //this file may also have to be split up soon
 
-origin $43ADCD14
+origin $43B43334
+include "GamePlay/Skills.asm"
+
+//origin $43ADCD14
 include "GamePlay/Items.asm"
 
 //30 strings in this block: characters and descriptions
@@ -70,7 +73,7 @@ Text($43B408F4, "Error code: [%d]") //cool
 origin $43B40DFC
 include "GamePlay/LocationsInGame.asm"
 
-origin $43B43334
+//origin $43B43334
 include "GamePlay/Monsters.asm"
 
 origin $43B54374
