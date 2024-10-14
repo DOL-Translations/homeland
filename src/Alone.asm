@@ -4,11 +4,11 @@
 //in the future addresses for server.rel and client.rel will be pulled from here
 //this file may also have to be split up soon
 
-origin $43B43334
-include "GamePlay/Skills.asm"
+origin $43ADA12C
+include "GamePlay/Items.asm"
 
 //origin $43ADCD14
-include "GamePlay/Items.asm"
+//include "GamePlay/Accessories.asm"
 
 //30 strings in this block: characters and descriptions
 Text($43ADDF6C, "Block")
@@ -42,8 +42,8 @@ Text("God")
 //Text("A mysterious squid tribe with strange eyes.")
 //Text("An entity of the human race (necessary for playing as a god).")
 
-origin $00150C54
-include "GamePlay/Connection.asm"
+//origin $00150C54
+//include "GamePlay/Connection.asm"
 
 //check these(!)
 Text($43AE3E0C, "Mr. Crab")
@@ -73,11 +73,14 @@ Text($43B408F4, "Error code: [%d]") //cool
 origin $43B40DFC
 include "GamePlay/LocationsInGame.asm"
 
+origin $43B43334
+include "GamePlay/Skills.asm"
+
 //origin $43B43334
-include "GamePlay/Monsters.asm"
+//include "GamePlay/Monsters.asm"
 
 origin $43B54374
-include "GamePlay/Action.asm"
+//include "GamePlay/Action.asm"
 
 Text($43B56F74, "Cloots Village")
 Text("Holo's Emergency Center")
@@ -89,7 +92,7 @@ Text("Baraku Town")
 
 Text($43B57214, "%s: %sBoru") //check
 
-Text($43B572DB, " pnts")
+//Text($43B572DB, " pnts")
 
 Text($43B58B90, "Clear Points")
 Text(" pnts")
@@ -105,8 +108,8 @@ Text("To Next Level: ")
 Text("Current Points: ")
 Text("%")
 
-Text($43B58F57, "Level")
-Text("Exp")
+//Text($43B58F57, "Level")
+//Text("Exp")
 
 Text($43B58DD0, "  Life: %3d/%3d")
 Text(" Power: %3d/%3d")
@@ -128,7 +131,7 @@ Text(" Pow")
 Text(":")
 Text("%+3d")
 
-Text($43B5B39B, "Boru") //check
+//Text($43B5B39B, "Boru") //check
 
 Text($43B5B4F8, "Clear Points: ")
 Text($43B5B5D0, "Clear Points: ")

@@ -40,6 +40,7 @@ macro Text(OFFSET, TEXT) {
     print {TEXT}
     print " is too big by "
     print (newLength - availableLength)
+    print "\n"
   }
 
   while (read(origin()) != 0x00) {
@@ -168,8 +169,8 @@ macro ReplaceAsset(ORIGIN, FILE, SIZE) {
 //Region
 //Uncomment BOTH lines to change region to NTSC-U.
 //Doing so will garble the untranslated Japanese characters.
-origin $3; db $45 //E
-origin $45B; db $01
+//origin $3; db $45 //E
+//origin $45B; db $01
 
 include "Banner.asm"
 include "System.asm"
