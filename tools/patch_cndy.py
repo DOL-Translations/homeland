@@ -3,16 +3,25 @@ import sys
 import json
 import re
 
-# Function to replace [FExx] codes with actual hex values (keeps string intact until final encoding)
+# Function to replace [FE05], [BB] codes with actual hex values (keeps string intact until final encoding)
 def replace_hex_codes(string):
-    def hex_replacer(match):
-        hex_value = match.group(1)
-        return chr(int(f"FE{hex_value}", 16))
+    # Create a list to accumulate the parts
+    result = bytearray()
     
-    # Use regular expression to find hex patterns like [FExx]
-    return re.sub(r'\[FE([0-9A-Fa-f]{2})\]', hex_replacer, string)
+    # This regular expression will match both single-byte and double-byte hex patterns like [FE05] or [BB]
+    parts = re.split(r'(\[[0-9A-Fa-f]{2,4}\])', string)
+    
+    for part in parts:
+        if re.match(r'\[[0-9A-Fa-f]{2,4}\]', part):
+            # Remove brackets and convert hex to bytes
+            hex_value = part[1:-1]  # Extract the hex part without brackets
+            result.extend(bytes.fromhex(hex_value))
+        else:
+            # Encode the non-hex parts of the string to Shift-JIS and append to the result
+            result.extend(part.encode('shift_jis', errors='replace'))
+    
+    return bytes(result)  # Return the result as bytes
 
-# Function to extract the starting positions of strings (offsets) in the binary data
 def extract_string_offsets(data, start_address, num_strings):
     offsets = []
     current_offset = start_address
@@ -81,7 +90,7 @@ def process_json_files(raw_directory, json_directory, output_directory):
                 # Insert strings at the original offsets
                 for idx, (string, string_offset) in enumerate(zip(strings, original_offsets)):
                     processed_string = replace_hex_codes(string)
-                    encoded_string = processed_string.encode('shift_jis', errors='replace')
+                    encoded_string = processed_string  # Already encoded as bytes by replace_hex_codes
 
                     # Find the next null terminator after this string
                     null_terminator_offset = find_next_null(original_data, string_offset, end_address)

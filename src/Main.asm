@@ -4,12 +4,16 @@ endian msb // GameCube PPC requires Big-Endian Encoding (Most Significant Bit)
 output "../output/HomeLand [U].iso", create
 origin $000000; insert "../input/HomeLand [J].iso" // Include Japanese HomeLand ISO
 
+constant ALONE = 0
+constant CLIENT = 1
+constant SERVER = 2
+variable file = ALONE
+
 macro Text(OFFSET, TEXT) {
   map 0, 0, 256 // Map Default ASCII Chars
   map '\n', 0x0A // New line
-  //todo: add more mappings for special characters
-
-  //special code 0xFE05
+  map '[', 0x81E7 //Used by system text
+  map ']', 0x81E8 //Used by system text
 
   origin {OFFSET}
   variable availableLength = 0;
@@ -178,9 +182,10 @@ include "System.asm"
 include "Unsorted.asm"
 include "Cndy.asm"
 
-include "Alone.asm" //calls shared asm after setting up addrs
-//include "Server.asm" //todo: calls shared asm after setting up addrs
-//include "Client.asm" //todo: calls shared asm after setting up addrs
+//each calls shared asm after setting up addrs
+include "Alone.asm" 
+include "Client.asm"
+include "Server.asm"
 
 include "GamePlay/backup/Menus.asm"
 include "GamePlay/backup/NPC.asm"

@@ -115,7 +115,7 @@ Text("Aroma Badge")
 Text("Leak Seal")
 Text("Unsealable Amulet")
 Text("Magic Ring")
-Text("Erudora Ring")
+Text("Erudorora Ring")
 Text("Jade Medal")
 Text("Fang Medal")
 Text("Cyclone Medal")
@@ -146,7 +146,7 @@ Text("Wind-Glide Wings")
 Text("Tobitto Weed")
 Text("Guidance of Light")
 Text("Emergency Badge")
-Text("Bow Chopper")
+Text("Friends List")
 Text("Silver Bell")
 Text("Boomerang")
 Text("Bluemerang")
@@ -198,7 +198,7 @@ Text("Signed Receipt")
 Text("Reailty Chime")
 Text("Horse Horn")
 Text("Horse Horn")
-Text("Uru Key")
+Text("Croro Key")
 Text("Wonder Vase")
 Text("Flower Garden Soil")
 Text("Broken Poruka Flute")
@@ -210,7 +210,7 @@ Text("Pure Water")
 Text("Beautiful Ring")
 Text("Kiro Key")
 Text("Whale Conch")
-Text("Kurotsu Key")
+Text("Croats Key")
 Text("Parcel")
 Text("Parcel")
 Text("Parcel")
@@ -236,24 +236,24 @@ Text("Neuron IC")
 Text("Wonder Vase")
 Text("Nomusan's Favorite")
 Text("Banaba's Room Key")
-Text("Palmara Key")
-Text("Palmara Soil")
+Text("Palmalla Key")
+Text("Palmalla Soil")
 Text("Hammer")
 Text("Tomachu Surprise")
 Text("Flowerpot")
 Text("Toy Block")
 Text("Picture")
 Text("Velvera's Jewel")
-Text("Cookware")
+Text("Knife")
 Text("Treasury Pass")
 Text("Shrine Doll")
-Text("Porka Key")
-Text("Porka Flute")
-Text("Porka Flute")
+Text("Polka Key")
+Text("Polka Flute")
+Text("Polka Flute")
 Text("Boron Parts")
 Text("Devil's Amber")
 Text("Origin of Magic")
-Text("Mugenso Essence")
+Text("Mugensou Essence")
 Text("Crest Fragment")
 Text("Crest Fragment")
 Text("Crest Fragment")
@@ -301,14 +301,14 @@ Text("Wind Charm")
 Text("Wind Message")
 Text("Kanel Medicine")
 Text("Library Book")
-Text("Kuro Gift")
+Text("Kuro's Gift")
 Text("Small Key")
 Text("Golbo's Bottle")
 Text("Golbo's Bottle")
 Text("Key")
 Text("Jewelry Box")
 Text("Jewelry Box")
-Text("Souko Key")
+Text("Warehouse Key")
 Text("Gentle Breeze")
 Text("Shears")
 Text("Hero's Sword")
@@ -371,25 +371,3 @@ Text("Ultra Rare Card")
 Text("Prime Trick")
 Text("Water Key")
 Text("Water Key")
-
-//todo: rework into item list
-//Money
-TextLegacy($00199D88, "Money") ; fill 2
-TextLegacy($43ADA8E4, "Money") ; fill 2
-TextLegacy($43C8DDAC, "Money") ; fill 2
-TextLegacy($49B086F0, "Money") ; fill 2
-TextLegacy($43CF180C, " Money:") ; fill 1
-TextLegacy($43CF1814, " boru") ; fill 3
-TextLegacy($43B53F84, " Money:") ; fill 1
-TextLegacy($43B53F8C, " boru") ; fill 3
-
-TextLegacy($43B57214, "%s: %s boru") ; fill 1
-TextLegacy($43CF1CCC, "%s: %s boru") ; fill 1
-
-//Herbs
-TextLegacy($43B3D72C, "Restores 70 Life") ; fill 8
-TextLegacy($43CDED14, "Restores 70 Life") ; fill 8
-
-//Twig
-TextLegacy($43B3C85C, "Cheap and Simple Weapon") ; fill 5
-TextLegacy($43CDDE44, "Cheap and Simple Weapon") ; fill 5

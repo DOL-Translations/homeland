@@ -4,6 +4,8 @@
 //in the future addresses for server.rel and client.rel will be pulled from here
 //this file may also have to be split up soon
 
+file = ALONE
+
 origin $43ADA12C
 include "GamePlay/Items.asm"
 
@@ -14,7 +16,7 @@ include "GamePlay/Items.asm"
 Text($43ADDF6C, "Block")
 Text("Flei")
 Text("Kirara")
-Text("Porka")
+Text("Polka")
 Text("Pinoc")
 Text("Cocotto")
 Text("Kron")
@@ -42,7 +44,7 @@ Text("God")
 //Text("A mysterious squid tribe with strange eyes.")
 //Text("An entity of the human race (necessary for playing as a god).")
 
-//origin $00150C54
+//origin $43ADE4B0
 //include "GamePlay/Connection.asm"
 
 //check these(!)
@@ -51,18 +53,18 @@ Text("Mr. Tiger")
 Text("Mr. Frog")
 Text("Mr. Bear")
 Text("Mr. Rabbit")
-Text("City of Darkness")
-Text("Cloots Heights")
-Text("Kaneru Heights")
-Text("Local Route")
-Text("Uru Mystery")
-Text("Wind's Edge")
+Text("Tokoyami Cave")
+Text("Croats Field")
+Text("Kanel Field")
+Text("Underpass")
+Text("Croro Maze")
+Text("Wind Cape")
 Text("Kiro Mine")
-Text("Guguru's Cave")
-Text("Kiro Mine")
+Text("Googoo's Cave")
+Text("Kiro Cliffs")
 Text("Trek Mountain")
-Text("Poruka's Edge")
-Text("Eldora Ruins")
+Text("Polka Cape")
+Text("Desert Ruins")
 Text("Elza")
 
 origin $43AFDD9C
@@ -80,15 +82,15 @@ include "GamePlay/Skills.asm"
 //include "GamePlay/Monsters.asm"
 
 origin $43B54374
-//include "GamePlay/Action.asm"
+include "GamePlay/Action.asm"
 
-Text($43B56F74, "Cloots Village")
-Text("Holo's Emergency Center")
-Text("Kaneru Town")
-Text("Uru Ruins")
-Text("Irumina Town")
+Text($43B56F74, "Croats Village")
+Text("Horo's Emergency Center")
+Text("Kanel Town")
+Text("Croro Ruins")
+Text("Illumina Town")
 Text("Kiro Town")
-Text("Baraku Town")
+Text("Valk Town")
 
 Text($43B57214, "%s: %sBoru") //check
 
