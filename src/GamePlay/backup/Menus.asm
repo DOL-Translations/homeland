@@ -16,13 +16,8 @@ TextLegacy($41BD646B, "No") ; fill 5
 TextLegacy($41C05447, "No") ; fill 5
 
 //Mascot
-TextLegacy($43ADDF6C, "Block") ; fill 7
-TextLegacy($43ADDF90, "Pinnock") ; fill 5
-TextLegacy($43ADDFD0, "Ganto") ; fill 3
 TextLegacy($43B242B4, RED) ; db "B Button", BLACK, ": Quit & Return" ; fill 11
 TextLegacy($43B3D704, "Exchange Item") ; fill 3
-TextLegacy($43B434B8, "Guts") ; fill 4
-TextLegacy($43B44194, "Increase force") ; fill 2
 
 //Level up menu
 TextLegacy($43B58BA8, "   Force:") ; fill 3
@@ -71,18 +66,6 @@ TextLegacy($43B58C3C, " Level") ; fill 2
 TextLegacy($43B58F58, " Level") ; fill 2
 TextLegacy($43CF3F7C, " Level") ; fill 2
 TextLegacy($43CF4298, " Level") ; fill 2
-
-//Shop menu
-
-TextLegacy($43B563BC, "Sell") ; fill 4
-TextLegacy($43CF1050, "Sell") ; fill 4
-TextLegacy($43B563E0, "Bulk Sell") ; fill 7
-TextLegacy($43CF1074, "Bulk Sell") ; fill 7
-
-TextLegacy($43B563B4, "Buy") ; fill 5
-TextLegacy($43CF1048, "Buy") ; fill 5
-TextLegacy($43B563D0, "Buy In Bulk") ; fill 5
-TextLegacy($43CF1064, "Buy In Bulk") ; fill 5
 
 //monsters
 TextLegacy($43B45A44, "Mill")

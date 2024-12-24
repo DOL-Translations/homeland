@@ -3,49 +3,37 @@ import sys
 import json
 import re
 
-# Function to replace [FE05], [BB] codes with actual hex values (keeps string intact until final encoding)
 def replace_hex_codes(string):
-    # Create a list to accumulate the parts
     result = bytearray()
-    
-    # This regular expression will match both single-byte and double-byte hex patterns like [FE05] or [BB]
     parts = re.split(r'(\[[0-9A-Fa-f]{2,4}\])', string)
-    
     for part in parts:
         if re.match(r'\[[0-9A-Fa-f]{2,4}\]', part):
-            # Remove brackets and convert hex to bytes
-            hex_value = part[1:-1]  # Extract the hex part without brackets
+            hex_value = part[1:-1]
             result.extend(bytes.fromhex(hex_value))
         else:
-            # Encode the non-hex parts of the string to Shift-JIS and append to the result
             result.extend(part.encode('shift_jis', errors='replace'))
-    
-    return bytes(result)  # Return the result as bytes
+    return bytes(result)
 
 def extract_string_offsets(data, start_address, num_strings):
     offsets = []
     current_offset = start_address
-
     for _ in range(num_strings):
         if current_offset >= len(data):
             break
-
         offsets.append(current_offset)
-
-        # Move to the next string (find the next null terminator)
         while current_offset < len(data) and data[current_offset] != 0x00:
             current_offset += 1
-
-        # Move past the null terminator
-        current_offset += 1
-
+        while current_offset < len(data) and data[current_offset] == 0x00:
+            current_offset += 1
     return offsets
 
-# Function to find the next null terminator after a given offset
 def find_next_null(data, start_offset, block_end):
     null_offset = start_offset
     while null_offset < block_end and data[null_offset] != 0x00:
         null_offset += 1
+    while null_offset < block_end and data[null_offset] == 0x00:
+        null_offset += 1
+    null_offset -= 1
     return null_offset
 
 # Function to process JSON files and repack strings into raw binary data
@@ -141,3 +129,4 @@ if __name__ == "__main__":
     output_dir = sys.argv[3]
 
     process_json_files(raw_dir, json_dir, output_dir)
+

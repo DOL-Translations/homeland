@@ -12,8 +12,8 @@ variable file = ALONE
 macro Text(OFFSET, TEXT) {
   map 0, 0, 256 // Map Default ASCII Chars
   map '\n', 0x0A // New line
-  map '[', 0x81E7 //Used by system text
-  map ']', 0x81E8 //Used by system text
+  map '<', 0x81E7 //Used by system text
+  map '>', 0x81E8 //Used by system text
 
   origin {OFFSET}
   variable availableLength = 0;
@@ -45,11 +45,14 @@ macro Text(OFFSET, TEXT) {
     print " is too big by "
     print (newLength - availableLength)
     print "\n"
+    origin origin() - newLength + availableLength
   }
-
+  
   while (read(origin()) != 0x00) {
     fill 1
-  } 
+  }
+
+   
 }
 
 // Warning: use address first!!
@@ -181,6 +184,8 @@ include "System.asm"
 //include "Netcfg.asm"
 include "Unsorted.asm"
 include "Cndy.asm"
+include "H4m.asm"
+include "Tpl.asm"
 
 //each calls shared asm after setting up addrs
 include "Alone.asm" 
