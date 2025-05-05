@@ -4,7 +4,7 @@
     "Size (bytes)": "1948",
     "Address": "0x360",
     "Strings": [
-        "ゴルボ",
+        "Golbo",
         "ボクの けんきゅうによれば\nくろいくもは ぜったいに\nけすことができるはずです。▼",
         "\nまってて くださいね。\nすぐに けして みせますから。▼",
         "\nアレを こうして‥‥\nコレを ああして‥‥と。▼",
@@ -50,16 +50,16 @@
         "ゲギャギャッ！",
         "このくもだけ すこし いろが うすいようです。",
         "シナリオカウンタアップ 「ヒカリのチカラ」後 ",
-        "たすかった‥‥▽\n",
-        "ありがとうございます‥‥▽\n",
-        "ほんとうに ほんとうに‥‥▼",
-        "あなたのて‥‥▼",
-        "\nなんだか ふしぎな\nカンジがしますね‥‥▼",
-        "\nなんというか [B8]ココロを\nかよわせる[B0]ことが できるような\nふしぎなカンジ‥‥▼",
-        "\nうまく せつめいできませんが\nとても あんしんできる\nあたたかな てです‥‥▼",
-        "そ‥‥▼",
-        "\nそっちには まものが‥‥▼",
-        "\nおねがいします‥‥▽\n",
-        "くろいくもの いちぶが きえた！"
+        "I'm saved...▽\n",
+        "Oh thank you...▽\n",
+        "Truly.. Sincerely...▼",
+        "Your hand...▼",
+        "\nIt feels different,\nspecial than most.▼",
+        "\nHow to put it?\nIt's like your hand makes\npeople [B8]Share Hearts[B0].▼",
+        "\nIt's difficult to explain,\nbut your warm hand\nmakes me feel very safe.▼",
+        "There..▼",
+        "There are monsters over there.▼",
+        "\nPlease...▽\n",
+        "The black clouds partially disappeared!"
     ]
 }

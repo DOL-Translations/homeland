@@ -3,3 +3,22 @@
 *.rel
 *.cndy
 *.bin
+src/GamePlay/rel.py
+src/GamePlay/output.txt
+src/GamePlay/input.txt
+src/Graphics/Tpl/scrubber.py
+src/Event/Cndy/Raw/output.txt
+src/Event/Cndy/Raw/asm.py
+src/Event/Cndy/new.xlsx
+src/Event/Cndy/index.txt
+src/Event/Cndy/index2.txt
+src/Event/Cndy/HomeLand Translation CNDY Events - Story (1).xlsx
+src/Event/Cndy/HomeLand Translation CNDY Events - Story (2).xlsx
+src/Event/Cndy/HomeLand Translation CNDY Events - Scenario.xlsx
+src/Event/Cndy/genrate xml backup.txt
+src/Event/Cndy/generate_xml.py
+src/Event/Cndy/generate_sheet.py
+src/Event/Cndy/cndy_master - Copy.csv
+output/test.py
+output/getaddrs.py
+output/output.txt

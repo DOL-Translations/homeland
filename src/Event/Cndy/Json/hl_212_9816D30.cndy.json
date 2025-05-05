@@ -5,7 +5,7 @@
     "Address": "0x30",
     "Strings": [
         "default.ame onLeavePlayer(",
-        ") ファーストプレイ",
+        ") First Player",
         "default.ame onSearch("
     ],
     "Found Strings": "3"

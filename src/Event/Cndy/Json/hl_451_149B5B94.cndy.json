@@ -4,12 +4,12 @@
     "Size (bytes)": "160",
     "Address": "0x30",
     "Strings": [
-        "クジラじまに いきますか？",
-        "ユメのせかいに いきますか？",
-        "クエスターパークへ のぼりますか？",
+        "Would you like to go to Whale Isle?",
+        "Would you like to go to Dream World?",
+        "Would you like to go to Quester Park?",
         "eventModeStart_highLevel",
         "setNoLookCHEnable",
         "setAbsInvisible",
-        "アプリカント"
+        "Apricant"
     ]
 }

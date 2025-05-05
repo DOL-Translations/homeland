@@ -5,7 +5,7 @@
     "Address": "0x40",
     "Strings": [
         "default.ame onEnterPlayer(",
-        ") セカンドプレイ",
+        ") First Play",
         "default.ame onLeavePlayer(",
         "default.ame onSearch("
     ],

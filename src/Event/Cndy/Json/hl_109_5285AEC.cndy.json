@@ -4,7 +4,7 @@
     "Size (bytes)": "84",
     "Address": "0x74",
     "Strings": [
-        "カギが かかっているようだ‥‥",
-        "なにも おこらない‥‥。\nあいことばが ちがうようだ。"
+        "The door is locked..",
+        "..Nothing happened.\nCheck the password and try again."
     ]
 }
