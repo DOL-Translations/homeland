@@ -5,6 +5,9 @@ origin $0003883B; db $00
 origin $0004B2CB; db $30
 origin $0003883F; db $01
 
+Text($00111650, "HomeLand")
+Text("HomeLand")
+
 Text($00115780, "Okay")
 Text("Thanks")
 Text("Help me!")
@@ -96,7 +99,6 @@ Text(" Spell")
 Text("Just %s.")
 
 //Ktie Editor (text)
-Text($00114988, "Apricant")
 origin $00114988
 include "GamePlay/Autocomplete.asm"
 
@@ -160,6 +162,12 @@ Text($00116CE8, "Save to Memory Card?")
 Text($00116D08, "Save to Memory Card?")
 Text($00116D78, "Save and quit to menu?")
 Text($00116DFC, "Would you like to save and return home?")
+
+TextLegacy($00199BE0, "Yes") ; fill 2
+TextLegacy($00199BE8, "No") ; fill 5
+
+TextLegacy($00199C60, "No") ; fill 5
+TextLegacy($00199C70, "Yes") ; fill 2
 
 Text($00199E28, "History")
 

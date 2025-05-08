@@ -42,7 +42,12 @@ Text("Elza")
 origin $43AFDD9C
 include "GamePlay/LocationsRealWorld.asm"
 
-Text($43B408F4, "Error Code: [%d]\n%s") //cool
+TextLegacy($43B242B4, RED) ; db "B Button", BLACK, ": Quit & Return" ; fill 11
+
+origin $43B3C820
+include "GamePlay/ItemDescriptions.asm"
+
+Text($43B408F4, "Error Code: [%d]\n%s")
 
 origin $43B40DFC
 include "GamePlay/LocationsInGame.asm"
@@ -78,6 +83,7 @@ Text("Valk Town")
 
 Text($43B53EA4, "Attack")
 Text("Defense")
+Text("Strgth")
 Text("Speed")
 Text("Mind")
 
@@ -131,6 +137,9 @@ Text("%+3d")
 Text($43B5B4F8, "Clear Points: ")
 Text($43B5B5D0, "Clear Points: ")
 Text($43B5B6A0, "Clear Points: ")
+
+origin $43B68654
+include "GamePlay/ActionGod.asm"
 
 origin $43B6899C
 include "GamePlay/SkillsGod.asm"

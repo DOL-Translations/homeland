@@ -40,10 +40,13 @@ Text("Elza")
 origin $43CC9D84
 include "GamePlay/LocationsRealWorld.asm"
 
+origin $43CDDE08
+include "GamePlay/ItemDescriptions.asm"
+
 //Client does not use locations in game
 //"GamePlay/LocationsInGame.asm"
 
-Text($43CE1EDC, "Error Code:[%d]\n%s")
+Text($43CE1EDC, "Error Code: [%d]\n%s")
 
 Text($43CE1FBC, "Online Adventure: ")
 Text("God Play: ")
@@ -76,6 +79,7 @@ Text("Kiro Town")
 Text("Valk Town")
 Text("Attack")
 Text("Defence")
+Text("Strgth")
 Text("Speed")
 Text("Mind")
 
