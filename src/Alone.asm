@@ -14,6 +14,8 @@ include "GamePlay/Accessories.asm"
 origin $43ADDF6C
 include "GamePlay/Mascot.asm"
 
+Text($43ADE3B0, "Success")
+
 origin $43ADE4B0
 include "GamePlay/Connection.asm"
 
@@ -40,13 +42,22 @@ Text("Elza")
 origin $43AFDD9C
 include "GamePlay/LocationsRealWorld.asm"
 
-Text($43B408F4, "Error code: [%d]") //cool
+Text($43B408F4, "Error Code: [%d]\n%s") //cool
 
 origin $43B40DFC
 include "GamePlay/LocationsInGame.asm"
 
 origin $43B43334
 include "GamePlay/Skills.asm"
+
+Text($43B44FC4, "Life has been swapped!")
+
+Text($43B49A4C, "A strong attack from Holding Hands: %s Pow")
+
+Text($43B4AABC, "Discard %s?")
+
+Text($43B4AC20, "%s: %s+%s Pow")
+Text("%s: %s Pow")
 
 origin $43B54374
 include "GamePlay/Action.asm"
@@ -65,7 +76,14 @@ Text("Illumina Town")
 Text("Kiro Town")
 Text("Valk Town")
 
-Text($43B57214, "%s: %sBoru") //check
+Text($43B53EA4, "Attack")
+Text("Defense")
+Text("Speed")
+Text("Mind")
+
+Text($43B53EF0, "Stats unchanged.")
+
+Text($43B57214, "%s: %s Boru") //check
 
 //Text($43B572DB, " pnts")
 
@@ -82,6 +100,8 @@ Text("/")
 Text("To Next Level: ")
 Text("Current Points: ")
 Text("%")
+
+Text($43B58C44, "EXP: ")
 
 //Text($43B58F57, "Level")
 //Text("Exp")

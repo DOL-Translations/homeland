@@ -18,6 +18,26 @@ ReplaceAsset($254EFFE4, "Event/Cndy/RawEdit/hl_32_1960648.cndy", 14060)
 ReplaceAsset($256CCA2C, "Event/Cndy/RawEdit/hl_34_1B3D090.cndy", 11604)
 ReplaceAsset($25B8A6E4, "Event/Cndy/RawEdit/hl_42_1FFAD48.cndy", 10604)
 
+ReplaceAsset($25DC86E8, "Event/Cndy/RawEdit/hl_45_2238D4C.cndy", 3760)
+ReplaceAsset($25F08E00, "Event/Cndy/RawEdit/hl_46_2379464.cndy", 4180)
+ReplaceAsset($25F09E54, "Event/Cndy/RawEdit/hl_47_237A4B8.cndy", 3840)
+
+ReplaceAsset($261E4D24, "Event/Cndy/RawEdit/hl_52_2655388.cndy", 6772)
+ReplaceAsset($261E6798, "Event/Cndy/RawEdit/hl_53_2656DFC.cndy", 6748)
+ReplaceAsset($263D2940, "Event/Cndy/RawEdit/hl_54_2842FA4.cndy", 3572)
+ReplaceAsset($263D3734, "Event/Cndy/RawEdit/hl_55_2843D98.cndy", 10056)
+ReplaceAsset($2668267C, "Event/Cndy/RawEdit/hl_56_2AF2CE0.cndy", 20928)
+ReplaceAsset($2668783C, "Event/Cndy/RawEdit/hl_57_2AF7EA0.cndy", 15040)
+ReplaceAsset($26907A7C, "Event/Cndy/RawEdit/hl_58_2D780E0.cndy", 8948)
+ReplaceAsset($26909D70, "Event/Cndy/RawEdit/hl_59_2D7A3D4.cndy", 18296)
+ReplaceAsset($26A70A60, "Event/Cndy/RawEdit/hl_60_2EE10C4.cndy", 13452)
+ReplaceAsset($26A73EEC, "Event/Cndy/RawEdit/hl_61_2EE4550.cndy", 17052)
+ReplaceAsset($26D48F40, "Event/Cndy/RawEdit/hl_62_31B95A4.cndy", 5472)
+ReplaceAsset($26D4A4A0, "Event/Cndy/RawEdit/hl_63_31BAB04.cndy", 9656)
+ReplaceAsset($26E83840, "Event/Cndy/RawEdit/hl_64_32F3EA4.cndy", 5112)
+ReplaceAsset($26E84C38, "Event/Cndy/RawEdit/hl_65_32F529C.cndy", 9520)
+ReplaceAsset($27071BCC, "Event/Cndy/RawEdit/hl_66_34E2230.cndy", 9940)
+
 include "Event/Chatter.asm"
 include "Event/Areas/Cloots.asm"
 include "Event/Areas/Park.asm"

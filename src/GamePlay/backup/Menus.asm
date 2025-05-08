@@ -1,71 +1,71 @@
 //this file needs to be integrated into the other scripts
 
 //alone.rel
-TextLegacy($43B56E3C, "Please wait a moment.") ; fill 3
+//TextLegacy($43B56E3C, "Please wait a moment.") ; fill 3
 
-TextLegacy($00199BE0, "Yes") ; fill 2
-TextLegacy($00199C70, "Yes") ; fill 2
-TextLegacy($41C05442, "Yes") ; fill 2
+//TextLegacy($00199BE0, "Yes") ; fill 2
+//TextLegacy($00199C70, "Yes") ; fill 2
+//TextLegacy($41C05442, "Yes") ; fill 2
 
-TextLegacy($3CF8DD48, "No") ; fill 5
-TextLegacy($3CF906CC, "No") ; fill 5
-TextLegacy($3EA73F77, "No") ; fill 5
-TextLegacy($3EA74D12, "No") ; fill 5
-TextLegacy($3EE6D7BF, "No") ; fill 5
-TextLegacy($41BD646B, "No") ; fill 5
-TextLegacy($41C05447, "No") ; fill 5
+//TextLegacy($3CF8DD48, "No") ; fill 5
+//TextLegacy($3CF906CC, "No") ; fill 5
+//TextLegacy($3EA73F77, "No") ; fill 5
+//TextLegacy($3EA74D12, "No") ; fill 5
+//TextLegacy($3EE6D7BF, "No") ; fill 5
+//TextLegacy($41BD646B, "No") ; fill 5
+//TextLegacy($41C05447, "No") ; fill 5
 
 //Mascot
-TextLegacy($43B242B4, RED) ; db "B Button", BLACK, ": Quit & Return" ; fill 11
-TextLegacy($43B3D704, "Exchange Item") ; fill 3
+//TextLegacy($43B242B4, RED) ; db "B Button", BLACK, ": Quit & Return" ; fill 11
+//TextLegacy($43B3D704, "Exchange Item") ; fill 3
 
 //Level up menu
-TextLegacy($43B58BA8, "   Force:") ; fill 3
-TextLegacy($43B58E00, "   Force:") ; fill 3
-TextLegacy($43CF3EE8, "   Force:") ; fill 3
-TextLegacy($43CF4140, "   Force:") ; fill 3
+//TextLegacy($43B58BA8, "   Force:") ; fill 3
+//TextLegacy($43B58E00, "   Force:") ; fill 3
+//TextLegacy($43CF3EE8, "   Force:") ; fill 3
+//TextLegacy($43CF4140, "   Force:") ; fill 3
 
-TextLegacy($43B58BB4, " Agility:") ; fill 3
-TextLegacy($43B58E0C, " Agility:") ; fill 3
-TextLegacy($43CF414C, " Agility:") ; fill 3
-TextLegacy($43CF3EF4, " Agility:") ; fill 4
+//TextLegacy($43B58BB4, " Agility:") ; fill 3
+//TextLegacy($43B58E0C, " Agility:") ; fill 3
+//TextLegacy($43CF414C, " Agility:") ; fill 3
+//TextLegacy($43CF3EF4, " Agility:") ; fill 4
 
-TextLegacy($43B58BC0, "    Mind:") ; fill 3
-TextLegacy($43B58E18, "    Mind:") ; fill 3
-TextLegacy($43CF4158, "    Mind:") ; fill 3
-TextLegacy($43CF3F00, "    Mind:") ; fill 3
+//TextLegacy($43B58BC0, "    Mind:") ; fill 3
+//TextLegacy($43B58E18, "    Mind:") ; fill 3
+//TextLegacy($43CF4158, "    Mind:") ; fill 3
+//TextLegacy($43CF3F00, "    Mind:") ; fill 3
 
-TextLegacy($00114B74, "Attack") ; fill 6
-TextLegacy($43CEF610, "Attack") ; fill 6
-TextLegacy($43CF172C, "Attack") ; fill 6
-TextLegacy($43B58BCC, "  Attack:") ; fill 3
-TextLegacy($43B58E24, "  Attack:") ; fill 3
-TextLegacy($43CF3F0C, "  Attack:") ; fill 3
-TextLegacy($43CF4164, "  Attack:") ; fill 3
+//TextLegacy($00114B74, "Attack") ; fill 6
+//TextLegacy($43CEF610, "Attack") ; fill 6
+//TextLegacy($43CF172C, "Attack") ; fill 6
+//TextLegacy($43B58BCC, "  Attack:") ; fill 3
+//TextLegacy($43B58E24, "  Attack:") ; fill 3
+//TextLegacy($43CF3F0C, "  Attack:") ; fill 3
+//TextLegacy($43CF4164, "  Attack:") ; fill 3
 
-TextLegacy($43B58BD8, " Defense:") ; fill 3
-TextLegacy($43CF3F18, " Defense:") ; fill 3
-TextLegacy($43B58E34, "   Defense:") ; fill 3
-TextLegacy($43CF4174, "   Defense:") ; fill 3
+//TextLegacy($43B58BD8, " Defense:") ; fill 3
+//TextLegacy($43CF3F18, " Defense:") ; fill 3
+//TextLegacy($43B58E34, "   Defense:") ; fill 3
+//TextLegacy($43CF4174, "   Defense:") ; fill 3
 
-TextLegacy($3C08BE14, " Pow") ; fill 1
-TextLegacy($43B4AC37, " Pow") ; fill 5
-TextLegacy($43B58F7C, " Pow") ; fill 1
-TextLegacy($43CF42BC, " Pow") ; fill 1
-TextLegacy($43CF3F24, " Power:") ; fill 2
-TextLegacy($43B58BEC, " Power:") ; fill 2
+//TextLegacy($3C08BE14, " Pow") ; fill 1
+//TextLegacy($43B4AC37, " Pow") ; fill 5
+//TextLegacy($43B58F7C, " Pow") ; fill 1
+//TextLegacy($43CF42BC, " Pow") ; fill 1
+//TextLegacy($43CF3F24, " Power:") ; fill 2
+//TextLegacy($43B58BEC, " Power:") ; fill 2
 
-TextLegacy($3C08BE2D, "Life") ; fill 1
-TextLegacy($43B58F60, "Life") ; fill 1
-TextLegacy($43CF42A0, "Life") ; fill 1
-TextLegacy($43B58BE4, "  Life:") ; fill 1
+//TextLegacy($3C08BE2D, "Life") ; fill 1
+//TextLegacy($43B58F60, "Life") ; fill 1
+//TextLegacy($43CF42A0, "Life") ; fill 1
+//TextLegacy($43B58BE4, "  Life:") ; fill 1
 
-TextLegacy($3C08BE3D, " Level") ; fill 2  
-TextLegacy($43B58C3C, " Level") ; fill 2
-TextLegacy($43B58C3C, " Level") ; fill 2
-TextLegacy($43B58F58, " Level") ; fill 2
-TextLegacy($43CF3F7C, " Level") ; fill 2
-TextLegacy($43CF4298, " Level") ; fill 2
+//TextLegacy($3C08BE3D, " Level") ; fill 2  
+//TextLegacy($43B58C3C, " Level") ; fill 2
+//TextLegacy($43B58C3C, " Level") ; fill 2
+//TextLegacy($43B58F58, " Level") ; fill 2
+//TextLegacy($43CF3F7C, " Level") ; fill 2
+//TextLegacy($43CF4298, " Level") ; fill 2
 
 //monsters
 TextLegacy($43B45A44, "Mill")
@@ -77,27 +77,27 @@ TextLegacy($43CF8B4C, "Amyl") ; fill 4
 TextLegacy($49B5C7A0, "Amyl") ; fill 4
 
 //Money
-TextLegacy($00199D88, "Money") ; fill 2
-TextLegacy($43ADA8E4, "Money") ; fill 2
-TextLegacy($43C8DDAC, "Money") ; fill 2
-TextLegacy($49B086F0, "Money") ; fill 2
-TextLegacy($43CF180C, " Money:") ; fill 1
-TextLegacy($43CF1814, " boru") ; fill 3
-TextLegacy($43B53F84, " Money:") ; fill 1
-TextLegacy($43B53F8C, " boru") ; fill 3
+//TextLegacy($00199D88, "Money") ; fill 2
+//TextLegacy($43ADA8E4, "Money") ; fill 2
+//TextLegacy($43C8DDAC, "Money") ; fill 2
+//TextLegacy($49B086F0, "Money") ; fill 2
+//TextLegacy($43CF180C, " Money:") ; fill 1
+//TextLegacy($43CF1814, " boru") ; fill 3
+//TextLegacy($43B53F84, " Money:") ; fill 1
+//TextLegacy($43B53F8C, " boru") ; fill 3
 
-TextLegacy($43B57214, "%s: %s boru") ; fill 1
-TextLegacy($43CF1CCC, "%s: %s boru") ; fill 1
+//TextLegacy($43B57214, "%s: %s boru") ; fill 1
+//TextLegacy($43CF1CCC, "%s: %s boru") ; fill 1
 
 //Item descriptions
 
 //Herbs
-TextLegacy($43B3D72C, "Restores 70 Life") ; fill 8
-TextLegacy($43CDED14, "Restores 70 Life") ; fill 8
+//TextLegacy($43B3D72C, "Restores 70 Life") ; fill 8
+//TextLegacy($43CDED14, "Restores 70 Life") ; fill 8
 
 //Twig
-TextLegacy($43B3C85C, "Cheap and Simple Weapon") ; fill 5
-TextLegacy($43CDDE44, "Cheap and Simple Weapon") ; fill 5
+//TextLegacy($43B3C85C, "Cheap and Simple Weapon") ; fill 5
+//TextLegacy($43CDDE44, "Cheap and Simple Weapon") ; fill 5
 
 // all.bin
 
