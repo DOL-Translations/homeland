@@ -67,6 +67,25 @@ macro Text(TEXT) {
   Text(ori, {TEXT})
 }
 
+// Warning: use address first!!
+macro TextErrorCode(TEXT) {
+  variable i = 300;
+  while (i > 0 && read(origin()) < 0x01) {
+    ds 1
+    i = i - 1;
+  }
+
+  if (read(origin()) == 0xFF) {
+    ds 4
+  }
+  if (read(origin()) < 0x20) {
+    ds 1
+  }
+  
+  variable ori = origin()
+  Text(ori, {TEXT})
+}
+
 //todo: these macros and constants should instead use special characters, such as \n for new line, \t for tab, etc.
 
 //Text utilities

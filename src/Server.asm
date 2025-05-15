@@ -80,7 +80,7 @@ Text($49B50910, "%s has logged out.")
 origin $49B55438
 include "GamePlay/ActionGod.asm"
 
-Text($49B55EE8, "It will end in %s minutes.")
+Text($49B55EE8, "Ending in %s seconds...")
 
 Text($49B56220, "Buy in 10 minutes.")
 Text("Buy in 20 minutes.")
