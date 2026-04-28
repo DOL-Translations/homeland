@@ -59,7 +59,7 @@ include "GamePlay/LocationsRealWorld.asm"
 //Text("Other")
 //Text("Asia (Japan)")
 
-origin $49B36960
+origin $49B413A8
 include "GamePlay/LocationsRealWorld2.asm"
 
 Text($49B46690, "Error Code: [%d]\n%s")

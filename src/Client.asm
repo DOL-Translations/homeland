@@ -114,6 +114,7 @@ Text("To Next Level: ")
 Text("Current Points: ")
 Text("%")
 
+Text($43CF3F7C, "Level")
 Text($43CF3F84, "EXP: ")
 
 Text($43CF4110, "  Life: %3d/%3d")

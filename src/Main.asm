@@ -201,7 +201,7 @@ macro ReplaceAsset(ORIGIN, FILE, SIZE) {
 
 include "Banner.asm"
 include "System.asm"
-//include "Netcfg.asm"
+include "Netcfg.asm"
 include "Unsorted.asm"
 include "Cndy.asm"
 include "H4m.asm"
