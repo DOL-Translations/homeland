@@ -20,11 +20,11 @@ origin $43ADE4B0
 include "GamePlay/Connection.asm"
 
 //check these(!)
-Text($43AE3E0C, "Mr. Crab")
-Text("Mr. Tiger")
-Text("Mr. Frog")
-Text("Mr. Bear")
-Text("Mr. Rabbit")
+Text($43AE3E0C, "Crab")
+Text("Tiger")
+Text("Frog")
+Text("Bear")
+Text("Rabbit")
 Text("Tokoyami Cave")
 Text("Croats Field")
 Text("Kanel Field")
@@ -32,7 +32,7 @@ Text("Underpass")
 Text("Croro Maze")
 Text("Wind Cape")
 Text("Kiro Mine")
-Text("Googoo's Cave")
+Text("Googoo Cave")
 Text("Kiro Cliffs")
 Text("Trek Mountain")
 Text("Polka Cape")
@@ -41,6 +41,21 @@ Text("Elza")
 
 origin $43AFDD9C
 include "GamePlay/LocationsRealWorld.asm"
+
+//origin $43B08858
+//Text("Africa")
+//Text("Antarctica")
+//Text("Asia")
+//Text("Europe")
+//Text("Middle East")
+//Text("North America")
+//Text("Oceania")
+//Text("South America")
+//Text("Other")
+//Text("Asia (Japan)")
+
+origin $43B087E4
+include "GamePlay/LocationsRealWorld2.asm"
 
 TextLegacy($43B242B4, RED) ; db "B Button", BLACK, ": Quit & Return" ; fill 11
 
@@ -74,7 +89,7 @@ origin $43B457F4
 include "GamePlay/Object.asm"
 
 Text($43B56F74, "Croats Village")
-Text("Horo's Emergency Center")
+Text("Horo Rest Stop")
 Text("Kanel Town")
 Text("Croro Ruins")
 Text("Illumina Town")
@@ -145,3 +160,16 @@ origin $43B6899C
 include "GamePlay/SkillsGod.asm"
 
 Text($43B6B4F4, "Move undefined: %s returned 0.")
+
+//asm patch to adjust prefecture list; incomplete
+//origin $43B0B904;
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $03, $16

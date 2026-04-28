@@ -18,11 +18,11 @@ Text($43C91280, "Success")
 origin $43C91380
 include "GamePlay/Connection.asm"
 
-Text($43C96CEC, "Mr. Crab")
-Text("Mr. Tiger")
-Text("Mr. Frog")
-Text("Mr. Bear")
-Text("Mr. Rabbit")
+Text($43C96CEC, "Crab")
+Text("Tiger")
+Text("Frog")
+Text("Bear")
+Text("Rabbit")
 Text("Tokoyami Cave")
 Text("Croats Field")
 Text("Kanel Field")
@@ -30,7 +30,7 @@ Text("Underpass")
 Text("Croro Maze")
 Text("Wind Cape")
 Text("Kiro Mine")
-Text("Googoo's Cave")
+Text("Googoo Cave")
 Text("Kiro Cliffs")
 Text("Trek Mountain")
 Text("Polka Cape")
@@ -39,6 +39,21 @@ Text("Elza")
 
 origin $43CC9D84
 include "GamePlay/LocationsRealWorld.asm"
+
+origin $43CD47CC
+include "GamePlay/LocationsRealWorld2.asm"
+
+//origin $43CD4840
+//Text("Africa")
+//Text("Antarctica")
+//Text("Asia")
+//Text("Europe")
+//Text("Middle East")
+//Text("North America")
+//Text("Oceania")
+//Text("South America")
+//Text("Other")
+//Text("Asia: Japan")
 
 origin $43CDDE08
 include "GamePlay/ItemDescriptions.asm"
@@ -71,14 +86,14 @@ origin $43CEF044
 include "GamePlay/Action.asm"
 
 Text($43CF16BC, "Croats Village")
-Text("Horo Emergency Center")
+Text("Horo Rest Stop")
 Text("Kanel Town")
 Text("Croro Ruins")
 Text("Illumina Town")
 Text("Kiro Town")
 Text("Valk Town")
 Text("Attack")
-Text("Defence")
+Text("Defense")
 Text("Strgth")
 Text("Speed")
 Text("Mind")
@@ -121,8 +136,63 @@ Text(" Pow")
 Text(":")
 Text("%+3d")
 
-//origin $43CF6854
-//include "GamePlay/Matchmaking.asm"
+Text($43CF6854, "Region:")
+Text("Distance:")
+Text("Name:")
+Text("Players:")
+Text("Active: ")
+Text("Password:")
+Text("Sort by:")
+Text(" ")
+Text("Confirm")
+Text("Return")
+
+Text($43CF68F4, "Search this region for a HomeLand GameCube.")
+Text("Search by distance to adventure.")
+Text("Search by name of God player.")
+Text("Search by number of players in the adventure.")
+Text("Search by time passed since the adventure began.")
+Text("Search by password protected.")
+Text("Sort by keyword.\nDisplays first 50 results.")
+Text("Search for a HomeLand with these filters.")
+Text("Return without searching for a HomeLand.")
+
+Text($43CF6B98, "Contains")
+Text("Any")
+Text("Same region")
+Text("Nearest first")
+Text("{5 players")
+Text("{10 players")
+Text("10+ players")
+Text("20+ players")
+Text("30+ players")
+Text("About to start")
+Text("Less than 1 hour")
+Text("Less than 5 hours")
+Text("Less than 10 hours")
+Text("Yes")
+Text("No")
+Text("Players")
+Text("Total players")
+Text("World uptime")
+Text("Guiding forces")
+Text("%s") //"%s %s", patched to not show prefecture
+
+//asm patch to not show prefecture
+origin $43C51A5C; db $7f, $65, $db, $78
+
+//asm patch to adjust prefecture list; incomplete
+//origin $43CD78EC;
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $03, $16
 
 Text($43CF6FF4, "Anyone")
 Text("Friends")

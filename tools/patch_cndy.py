@@ -2,6 +2,17 @@ import os
 import sys
 import json
 import re
+import shutil
+
+# =============================================
+# BLACKLISTED CNDY FILE NUMBERS (by index)
+# Files in this list will be copied verbatim
+# to the output directory without processing.
+# Add/remove numbers as needed.
+# =============================================
+BLACKLIST = {
+    116, 514
+}
 
 def replace_hex_codes(string):
     result = bytearray()
@@ -36,6 +47,13 @@ def find_next_null(data, start_offset, block_end):
     null_offset -= 1
     return null_offset
 
+def get_cndy_number(filename):
+    """Extract the numeric index from a cndy filename, e.g. 'file_005.cndy' -> 5."""
+    match = re.search(r'(\d+)', filename)
+    if match:
+        return int(match.group(1))
+    return None
+
 # Function to process JSON files and repack strings into raw binary data
 def process_json_files(raw_directory, json_directory, output_directory):
     os.makedirs(output_directory, exist_ok=True)
@@ -47,6 +65,17 @@ def process_json_files(raw_directory, json_directory, output_directory):
             with open(json_file_path, 'r', encoding='utf-8') as json_file:
                 json_data = json.load(json_file)
 
+                cndy_filename = json_data["FileName"].replace(".json", ".cndy")
+                raw_binary_path = os.path.join(raw_directory, cndy_filename)
+                output_file_path = os.path.join(output_directory, cndy_filename)
+
+                # Check blacklist
+                cndy_num = get_cndy_number(cndy_filename)
+                if cndy_num in BLACKLIST:
+                    print(f"Skipping {cndy_filename} (blacklisted), copying verbatim.")
+                    shutil.copy2(raw_binary_path, output_file_path)
+                    continue
+
                 strings = json_data.get("Strings", [])
                 num_strings = int(json_data.get("Number of Strings", 0))
                 total_size = int(json_data.get("Size (bytes)", 0))
@@ -54,7 +83,6 @@ def process_json_files(raw_directory, json_directory, output_directory):
                 start_address = address + 0x8  # Strings start after first 8 bytes
 
                 # Open the original binary file
-                raw_binary_path = os.path.join(raw_directory, json_data["FileName"].replace(".json", ".cndy"))
                 with open(raw_binary_path, 'rb') as raw_file:
                     original_data = bytearray(raw_file.read())
 
@@ -114,7 +142,6 @@ def process_json_files(raw_directory, json_directory, output_directory):
                     output_data.extend(b'\x00' * (end_address - len(output_data)))
 
                 # Write the modified data to the output file
-                output_file_path = os.path.join(output_directory, json_data["FileName"].replace(".json", ".cndy"))
                 with open(output_file_path, 'wb') as output_file:
                     output_file.write(output_data)
 
@@ -129,4 +156,3 @@ if __name__ == "__main__":
     output_dir = sys.argv[3]
 
     process_json_files(raw_dir, json_dir, output_dir)
-

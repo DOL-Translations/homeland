@@ -44,7 +44,7 @@ Text("Adventure saved.")
 Text("Data is from a different game version. Delete it?")
 Text("Memory Card has corrupted data. Format?")
 Text("Attempting to repair corrupted HomeLand save on the Memory Card.")
-Text("Starting in %2d:%2d\n%2d Players")
+Text("Starting in %2d:%02d\n%2d Players")
 Text("Ending in %2d:%2d")
 Text("Connect to the network using the Broadband Adapter?")
 Text("Connecting to the network.. (Press B to cancel)\nDo not touch the Memory Card or the POWER Button.\nWhen playing online with other players,\nplease exercise courtesy and discretion.\nWe are not responsible for damage caused by online interactions.")
@@ -80,9 +80,9 @@ Text("Complete")
 Text("Start")
 Text("Log Out")
 Text("Settings")
-Text("Quit")
+Text("Kick Out")
 Text("Save to Memory Card.")
-Text("Save to Memory Card. \n2P golems will not be saved,\nand will disappear after you leave.")
+Text("Save to Memory Card.\n2P golems will not be saved,\nand will disappear after you leave.")
 Text("Leave your adventure?")
 Text("Leave your adventure? You will not be able to save.")
 Text("You can't leave here.")
@@ -247,3 +247,12 @@ Text($57052650, "Network Setup")
 Text($57052660, "Connection Test")
 Text($57052670, "Credits")
 Text($57052684, "Go to Network Settings?")
+
+//misc region list patches
+//origin $43B0B90B; db $09
+//origin $43CD78F3; db $09
+//origin $49B444CF; db $09
+
+//identify as version 03 (test disc) & 07 (retail)
+origin $0003E753; db $07
+origin $0003E75F; db $03

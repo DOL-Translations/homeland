@@ -14,6 +14,7 @@ macro Text(OFFSET, TEXT) {
   map '\n', 0x0A // New line
   map '<', 0x81E7 //Used by system text
   map '>', 0x81E8 //Used by system text
+  map '{', 0x3C //lol
 
   origin {OFFSET}
   variable availableLength = 0;

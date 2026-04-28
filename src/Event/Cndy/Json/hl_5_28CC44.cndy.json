@@ -273,7 +273,7 @@
         "\nそれから たびを つづけるうちに\nほかのクエスターと であう\nこともあるかもしれません。▼",
         "\nそのときには ちからを\nあわせて せかいのへいわを\nまもってくださいね。▼",
         "\nなにか わからないことが\nあれば いつでも わたしに\nきいてくださいね。▼",
-        "＃せつぞくきりかえ",
+        "*SWITCHCON",
         "Switch current\nconnection mode.▼",
         "The connection is\nis currently set to\n[BB]Matchmaking Server[B0].",
         "\nSwitch connection to using\n[BB]IP Address[B0]?▼",

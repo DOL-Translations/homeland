@@ -18,11 +18,11 @@ Text($49B0C1BC, "Success")
 origin $49B0C2BC
 include "GamePlay/Connection.asm"
 
-Text($49B11988, "Mr. Crab")
-Text("Mr. Tiger")
-Text("Mr. Frog")
-Text("Mr. Bear")
-Text("Mr. Rabbit")
+Text($49B11988, "Crab")
+Text("Tiger")
+Text("Frog")
+Text("Bear")
+Text("Rabbit")
 Text("Tokoyami Cave")
 Text("Croats Field")
 Text("Kanel Field")
@@ -30,14 +30,14 @@ Text("Underpass")
 Text("Croro Maze")
 Text("Wind Cape")
 Text("Kiro Mine")
-Text("Googoo's Cave")
+Text("Googoo Cave")
 Text("Kiro Cliffs")
 Text("Trek Mountain")
 Text("Polka Cape")
 Text("Desert Ruins")
 Text("Elza")
 
-Text($49B326D0, "%02d Time %02d Cost %02d Life")
+Text($49B326D0, "%02dhrs %02dmins %02dsecs")
 Text("None")
 
 Text($49B34448, "Elza Tower 10F")
@@ -46,6 +46,21 @@ Text("Elza Tower 4F")
 
 origin $49B36960
 include "GamePlay/LocationsRealWorld.asm"
+
+//origin $49B4141C
+//Text("Africa")
+//Text("Antarctica")
+//Text("Asia")
+//Text("Europe")
+//Text("Middle East")
+//Text("North America")
+//Text("Oceania")
+//Text("South America")
+//Text("Other")
+//Text("Asia (Japan)")
+
+origin $49B36960
+include "GamePlay/LocationsRealWorld2.asm"
 
 Text($49B46690, "Error Code: [%d]\n%s")
 
@@ -72,7 +87,7 @@ Text("%s has left the world.")
 Text($49B4DA98, "Boru was sent from %s.")
 Text("%s has sent you %s.")
 
-Text($49B4FB54, "Hakobune")
+Text($49B4FB54, "The Ark")
 Text("Please wait..")
 
 Text($49B50910, "%s has logged out.")
@@ -82,13 +97,13 @@ include "GamePlay/ActionGod.asm"
 
 Text($49B55EE8, "Ending in %s seconds...")
 
-Text($49B56220, "Buy in 10 minutes.")
-Text("Buy in 20 minutes.")
-Text("Buy in 30 minutes.")
-Text("Buy in 40 minutes.")
-Text("Buy in 50 minutes.")
-Text("Buy in 60 minutes.")
-Text("Buy now.")
+Text($49B56220, "Start in 10 minutes")
+Text("Start in 20 minutes")
+Text("Start in 30 minutes")
+Text("Start in 40 minutes")
+Text("Start in 50 minutes")
+Text("Start in 60 minutes")
+Text("Start now")
 
 Text($49B56548, "One")
 Text("Two")
@@ -107,7 +122,7 @@ Text($49B56EB8, "Name:")
 Text("Local Time:")
 Text("Players:")
 Text("Password:")
-Text("Help Number:")
+Text("Questers Helped:")
 
 Text($49B57080, "Location:")
 Text("Password:")
@@ -126,8 +141,24 @@ Text("Return to your room.")
 
 Text($49B57304, "None")
 Text("Some")
-Text("%s %s")
+Text("%s") //"%s %s", patched to not show prefecture
 Text("%s")
+
+//asm patch to not show prefecture
+origin $49AAF97C; db $7f, $c5, $f3, $78
+
+//asm patch to adjust prefecture list; incomplete
+//origin $49B444C8;
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $00, $01
+//db $00, $00, $00, $00, $00, $00, $03, $16
 
 Text($49B595F8, "Starting Point")
 
